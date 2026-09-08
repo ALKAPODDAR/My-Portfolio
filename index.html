@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alka Poddar — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">AP</span>
+      <span class="brand-name">Alka&nbsp;Poddar</span>
+    </a>
+    <nav class="col-nav" aria-label="Section navigation">
+      <a href="#about"><span class="col-tag">A</span>About</a>
+      <a href="#skills"><span class="col-tag">B</span>Skills</a>
+      <a href="#projects"><span class="col-tag">C</span>Projects</a>
+      <a href="#experience"><span class="col-tag">D</span>Experience</a>
+      <a href="#contact"><span class="col-tag">E</span>Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <line x1="12" y1="2" x2="12" y2="4.5"></line>
+          <line x1="12" y1="19.5" x2="12" y2="22"></line>
+          <line x1="4.2" y1="4.2" x2="5.9" y2="5.9"></line>
+          <line x1="18.1" y1="18.1" x2="19.8" y2="19.8"></line>
+          <line x1="2" y1="12" x2="4.5" y2="12"></line>
+          <line x1="19.5" y1="12" x2="22" y2="12"></line>
+          <line x1="4.2" y1="19.8" x2="5.9" y2="18.1"></line>
+          <line x1="18.1" y1="5.9" x2="19.8" y2="4.2"></line>
+        </svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"></path>
+        </svg>
+      </button>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="query-bar" aria-hidden="true">
+        <span class="query-prompt">&gt;</span>
+        <span id="queryText" class="query-text"></span><span class="query-cursor">|</span>
+      </p>
+
+      <h1 class="hero-title">
+        Data Analyst,<br>
+        <span class="hero-title-accent">self&#8209;taught, project&#8209;driven.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Hi, I'm Alka.<br> 
+        I turn raw, messy data into decisions — using Python, SQL, and Power BI&nbsp;
+        to find the patterns behind the numbers that matter :)
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="https://drive.google.com/file/d/1WOynlEESr6VPbfyvMoJ8ExRydO5STek1/view?usp=sharing" class="btn btn-ghost" target="_blank" rel="noopener">Download resume</a>
+        <!-- <a href="./Alka_Poddar_Resume_OnePage.pdf" class="btn btn-ghost" download>Download resume template</a> -->
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="hero-svg" viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- laptop frame -->
+        <rect class="hv-frame" x="40" y="30" width="320" height="220" rx="14"/>
+        <rect class="hv-screen" x="56" y="46" width="288" height="188" rx="4"/>
+
+        <!-- chart axes -->
+        <line class="hv-axis" x1="82" y1="205" x2="322" y2="205"/>
+        <line class="hv-axis" x1="82" y1="70" x2="82" y2="205"/>
+
+        <!-- bars -->
+        <rect class="hv-bar hv-bar-teal" x="104" y="150" width="26" height="55" rx="3"/>
+        <rect class="hv-bar hv-bar-amber" x="146" y="120" width="26" height="85" rx="3"/>
+        <rect class="hv-bar hv-bar-teal" x="188" y="95" width="26" height="110" rx="3"/>
+        <rect class="hv-bar hv-bar-amber" x="230" y="135" width="26" height="70" rx="3"/>
+        <rect class="hv-bar hv-bar-teal" x="272" y="80" width="26" height="125" rx="3"/>
+
+        <!-- trend line + scatter dots -->
+        <polyline class="hv-trend" points="104,132 146,108 188,86 230,118 272,68"/>
+        <circle class="hv-dot" cx="104" cy="132" r="4"/>
+        <circle class="hv-dot" cx="146" cy="108" r="4"/>
+        <circle class="hv-dot" cx="188" cy="86" r="4"/>
+        <circle class="hv-dot" cx="230" cy="118" r="4"/>
+        <circle class="hv-dot" cx="272" cy="68" r="4"/>
+
+        <!-- laptop base -->
+        <path class="hv-base" d="M20 250 L380 250 L364 268 L36 268 Z"/>
+
+        <!-- floating metric chip: Campaign A + Email, +54% revenue -->
+        <g class="hv-chip" transform="translate(230,255)">
+          <rect x="0" y="0" width="176" height="70" rx="10"/>
+          <text class="hv-chip-label" x="16" y="24">-- campaign a / email</text>
+          <text class="hv-chip-value" x="16" y="52">
+            <tspan class="hv-chip-arrow">▲ </tspan>54%<tspan class="hv-chip-unit"> revenue</tspan>
+          </text>
+        </g>
+
+        <!-- floating query dot badge -->
+        <g class="hv-badge" transform="translate(18,150)">
+          <circle r="26"/>
+          <text x="0" y="-1" text-anchor="middle" class="hv-badge-glyph">SQL</text>
+          <text x="0" y="10" text-anchor="middle" class="hv-badge-sub">+ py</text>
+        </g>
+
+        <!-- scatter accents, echoing EDA -->
+        <circle class="hv-accent-dot" cx="400" cy="330" r="3"/>
+        <circle class="hv-accent-dot" cx="386" cy="345" r="3"/>
+        <circle class="hv-accent-dot" cx="412" cy="352" r="3"/>
+        <circle class="hv-accent-dot" cx="60" cy="370" r="3"/>
+        <circle class="hv-accent-dot" cx="80" cy="358" r="3"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="kpi-row" id="kpiRow">
+    <div class="kpi-card" data-target="500" data-suffix="+">
+      <span class="kpi-label">-- customer interactions analyzed</span>
+      <span class="kpi-number"><span class="kpi-count">0</span><span class="kpi-suffix">+</span></span>
+      <span class="kpi-bar"><span class="kpi-bar-fill" style="--fill:78%"></span></span>
+    </div>
+    <div class="kpi-card" data-target="3900" data-suffix="+">
+      <span class="kpi-label">-- purchase transactions mined</span>
+      <span class="kpi-number"><span class="kpi-count">0</span><span class="kpi-suffix">+</span></span>
+      <span class="kpi-bar"><span class="kpi-bar-fill" style="--fill:64%"></span></span>
+    </div>
+    <div class="kpi-card" data-target="246" data-suffix="K+">
+      <span class="kpi-label">-- retail transactions cleaned</span>
+      <span class="kpi-number"><span class="kpi-count">0</span><span class="kpi-suffix">K+</span></span>
+      <span class="kpi-bar"><span class="kpi-bar-fill" style="--fill:92%"></span></span>
+    </div>
+    <div class="kpi-card" data-target="25" data-suffix="%">
+      <span class="kpi-label">-- of chip sales, top 3 segments</span>
+      <span class="kpi-number"><span class="kpi-count">0</span><span class="kpi-suffix">%</span></span>
+      <span class="kpi-bar"><span class="kpi-bar-fill" style="--fill:55%"></span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">-- SELECT * FROM about WHERE honest = true;</p>
+    <h2 class="section-title">About</h2>
+
+    <div class="about-grid">
+      <p class="about-text">
+        I graduated in 2026 with a degree in Computer Science & Engineering with specilization in Blockchain 
+        and am a self-taught Data Analyst.<br> 
+        I've worked with raw business data to understand customer behaviour, measure campaign performance, 
+        and test what actually drives better outcomes.
+        I used SQL and Python to dig into the data and find the patterns behind the numbers, 
+        then used Power&nbsp;BI to communicate those findings and turn them into clear recommendations.
+
+      </p>
+      <p class="about-text">
+        My main purpose is to create data-backed solutions for growth.<br>
+        What I care about isn’t the tool, but the question underneath it: 
+        which segment is actually driving revenue, which channel is worth the budget, 
+        which pattern in the mess is real, and which is just noise?<br>
+        That’s the thread running through every project below.
+      </p>
+      <div class="about-note">
+        <span class="about-note-label">-- self‑taught, in order ASC</span>
+        <ol class="about-timeline">
+          <li><span class="mono-tag">01</span> SQL for Data Analysis (Advanced SQL Querying Techniques) — Maven Analytics</li>
+          <li><span class="mono-tag">02</span> Python Data Science Data Prep & EDA with Python — Maven Analytics</li>
+          <li><span class="mono-tag">03</span> Microsoft Power BI Desktop for Business Intelligence</li>
+          <li><span class="mono-tag">04</span> Applied all three to real project datasets</li>
+          <li><span class="mono-tag">05</span> A/B testing in Python —  365 Careers</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">-- SELECT * FROM skills ORDER BY category;</p>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-table" role="table">
+      <div class="skills-row" role="row">
+        <span class="skills-key" role="columnheader">Languages</span>
+        <span class="skills-val" role="cell">SQL &nbsp;&middot;&nbsp; Python &nbsp;&middot;&nbsp; DAX &nbsp;&middot;&nbsp; Java</span>
+      </div>
+      <div class="skills-row" role="row">
+        <span class="skills-key" role="columnheader">Tools</span>
+        <span class="skills-val" role="cell">Power BI &nbsp;&middot;&nbsp; MySQL Workbench &nbsp;&middot;&nbsp; Jupyter Notebook &nbsp;&middot;&nbsp; Git &nbsp;&middot;&nbsp; GitHub</span>
+      </div>
+      <div class="skills-row" role="row">
+        <span class="skills-key" role="columnheader">Libraries</span>
+        <span class="skills-val" role="cell">Pandas &nbsp;&middot;&nbsp; NumPy &nbsp;&middot;&nbsp; Matplotlib &nbsp;&middot;&nbsp; Seaborn</span>
+      </div>
+      <div class="skills-row" role="row">
+        <span class="skills-key" role="columnheader">Methods</span>
+        <span class="skills-val" role="cell">EDA &nbsp;&middot;&nbsp; Data Cleaning &nbsp;&middot;&nbsp; Data Visualization &nbsp;&middot;&nbsp; 
+        Dashboarding &nbsp;&middot;&nbsp; A/B Testing &nbsp;&middot;&nbsp; Affinity Analysis &nbsp;&middot;&nbsp; Conversion Rate Optimization &nbsp;&middot;&nbsp; 
+        Efficiency Metrics &nbsp;&middot;&nbsp; Normalized - Weighted Scoring</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">-- SELECT * FROM projects ORDER BY impact DESC;</p>
+    <h2 class="section-title">Selected Projects</h2>
+    <p class="section-lede">end-to-end analyses — click any card to open the approach and findings.</p>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- PROJECT 1 -->
+      <article class="project-card" data-open="false">
+        <button class="project-head" aria-expanded="false">
+          <div class="project-head-text">
+            <span class="project-index">PROJECT 01 / 04</span>
+            <span class="project-tags">
+              <span class="mono-tag">python</span><span class="mono-tag">pandas</span><span class="mono-tag">numpy</span><span class="mono-tag">seaborn</span><span class="mono-tag">matplotlib</span><span class="mono-tag">scipy</span>
+            </span>
+            <h3 class="project-title">Retail Strategy &amp; Analytics</h3>
+            <p class="project-sub">Quantium Virtual Internship &middot; Forage Job Simulation</p>
+          </div>
+          <span class="project-chevron" aria-hidden="true">＋</span>
+        </button>
+        <div class="project-body">
+          <p><strong>The question:</strong> Which customer segments actually drive chip category sales? Perform A/B testing to examine the effect of a new store layout on store performance.</p>
+          <p><strong>Approach:</strong> Cleaned and merged transaction and customer datasets covering 246K+ records, then segmented customers to find that a small set of segments collectively, accounted for roughly 25% of total chip sales. I ran affinity analysis to see which products each segment over-indexed on. Then for next task, I designed a trial-vs-control store matching framework using correlation and magnitude distance so any sales lift could be attributed to the trial, not to store-to-store noise.</p>
+          <p><strong>Outcome:</strong> Top sales segments are Budget Older Families, Mainstream Young Singles/Couples, and Mainstream Retirees, suggested segment-specific promotional campaigns and category planning as they contribute the highest sales and a statistically defensible A/B test design that could support a real store-layout rollout.</p>
+
+          <div class="project-gallery">
+            <figure class="gallery-item">
+              <img src="./images/project1-1.png" alt="Segment revenue contribution chart" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project1-1.png')">
+              <figcaption>Segment revenue contribution</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./images/project1-2.png" alt="Trial vs control store performance chart" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project1-2.png')">
+              <figcaption>Trial vs. control store performance</figcaption>
+            </figure>
+          </div>
+
+          <a class="project-link" href="https://github.com/ALKAPODDAR/Quantium/blob/main/README.md" target="_blank" rel="noopener">for details → view repository →</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card" data-open="false">
+        <button class="project-head" aria-expanded="false">
+          <div class="project-head-text">
+            <span class="project-index">PROJECT 02 / 04</span>
+            <span class="project-tags">
+              <span class="mono-tag">python (pandas)</span><span class="mono-tag">scikit-learn</span><span class="mono-tag">seaborn</span><span class="mono-tag">matplotlib</span>
+            </span>
+            <h3 class="project-title">Marketing Campaign Performance</h3>
+            <p class="project-sub">BCG X &middot; Forage Job Simulation</p>
+          </div>
+          <span class="project-chevron" aria-hidden="true">＋</span>
+        </button>
+        <div class="project-body">
+          <p><strong>The question:</strong> Across 2 campaign types (A = conversational, B = promotional) and 3 channels (Email, Instagram, Web Banner), where should marketing spend go if the top priority is new customer growth?</p>
+          <p><strong>Approach:</strong> Analyzed 500+ customer interactions and calculated 12 key performance metrics including conversion rate, revenue, efficiency, weighted scores, and supporting breakdowns. These metrics were compared across campaign–channel combinations to identify which drivers most strongly influenced new customer outcomes. To make the comparison fair across very different channel scales, I built a weighted ranking model rather than relying on raw revenue alone.</p>
+          <p><strong>Outcome:</strong> Campaign A + Email came out ~54% higher on revenue potential than Campaign B + Email, and the ranking model flagged Email specifically as the strongest driver of new customer acquisition — a concrete case for reallocating budget.</p>
+
+          <div class="project-gallery">
+            <figure class="gallery-item">
+              <img src="./images/project2-1.png" alt="New Customers Weighted Scores" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project2-1.png')">
+              <figcaption>Weighted Scores by Campaign & Channel (New Customers)</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./images/project2-2.png" alt="All Customers Weighted Scores" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project2-2.png')">
+              <figcaption>Weighted Scores by Campaign, Channel (All Customers) &amp; channel</figcaption>
+            </figure>
+          </div>
+
+          <a class="project-link" href="https://github.com/ALKAPODDAR/BCG-X/blob/main/README.md" target="_blank" rel="noopener">for details → view repository →</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card" data-open="false">
+        <button class="project-head" aria-expanded="false">
+          <div class="project-head-text">
+            <span class="project-index">PROJECT 03 / 04</span>
+            <span class="project-tags">
+              <span class="mono-tag">MySQL</span><span class="mono-tag">Power BI</span><span class="mono-tag">Python (pandas)</span><span class="mono-tag">SQL Workbench</span><span class="mono-tag">Jupyter Notebook</span><span class="mono-tag">sqlalchemy</span><span class="mono-tag">urllib</span>
+            </span>
+            <h3 class="project-title">Customer Shopping Behaviour</h3>
+            <p class="project-sub">Independent project &middot; Kaggle dataset</p>
+          </div>
+          <span class="project-chevron" aria-hidden="true">＋</span>
+        </button>
+        <div class="project-body">
+          <p><strong>The question:</strong> what do 3,900+ purchase records across 18 features actually say about who buys, what they buy, and whether they'll stay subscribed?</p>
+          <p><strong>Approach:</strong> Cleaned and prepared the dataset using Python (Pandas) — handling missing values, standardizing columns, and creating age-group segments — then loaded it into MySQL for SQL-based business analysis covering revenue by gender/age, subscriber vs non-subscriber spending, 
+            discount usage, and repeat buyer behaviour. Findings were then visualized in a Power BI dashboard covering Executive Summary, Customer Behaviour, Product Performance, and Operational Insights.</p>
+          <p><strong>Outcome:</strong> Subscribers generated higher and more consistent revenue than non-subscribers, and certain age groups contributed disproportionately to total sales. Repeat customers proved to be a major growth driver, while heavy reliance on discounts was found to boost volume but risk 
+            profit margins. Top-rated products emerged as strong candidates for targeted promotion, and shipping preferences showed a clear link to customer spending patterns — together pointing toward stronger retention programs, smarter discount strategies, and demographic-focused marketing as key next steps.</p>
+
+          <div class="project-gallery">
+            <figure class="gallery-item">
+              <img src="./images/project3-1.png" alt="Power BI dashboard overview" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project3-1.png')">
+              <figcaption>Power BI dashboard overview</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./images/project3-2.png" alt="Customer segmentation chart" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project3-2.png')">
+              <figcaption>Customer segmentation breakdown</figcaption>
+            </figure>
+          </div>
+          <a class="project-link" href="https://github.com/ALKAPODDAR/Customer-Behaviour-Analysis/blob/main/README.md" target="_blank" rel="noopener">for details → view repository →</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="project-card" data-open="false">
+        <button class="project-head" aria-expanded="false">
+          <div class="project-head-text">
+            <span class="project-index">PROJECT 04 / 04</span>
+            <span class="project-tags">
+              <span class="mono-tag">Power BI Desktop</span><span class="mono-tag">Dashboarding</span><span class="mono-tag">Power Query</span><span class="mono-tag">DAX</span><span class="mono-tag">Data Modeling</span>
+            </span>
+            <h3 class="project-title">Sales Analysis Dashboard</h3>
+            <p class="project-sub">Independent project &middot; Kaggle dataset</p>
+          </div>
+          <span class="project-chevron" aria-hidden="true">＋</span>
+        </button>
+        <div class="project-body">
+          <p><strong>The question:</strong> How can sales, customer, product, and store data from a multinational grocery chain (Canada, Mexico, US) be analyzed to track performance, profitability, and customer behavior for data-backed decisions?</p>
+          <p><strong>Approach:</strong> Cleaned data in Power Query; built relational data model in Power BI, created DAX measures for total revenue, total profit, profit margin percent, total transactions, return rate percent, avg revenue per customer; finally built 4 dashboards features — topline performance, product analysis, customer analysis, store performance.</p>
+          <p><strong>Outcome:</strong> US led in both revenue and transaction volume across all regions, making it the primary driver of overall performance. A small set of top products accounted for the majority of sales, while certain product categories showed notably higher return rates, pointing to potential quality or expectation issues. Store performance varied 
+            significantly by region, reflecting differences in local demand and operations, and clear seasonal peaks emerged in the data — offering useful signals for future inventory and promotional planning.</p>
+
+          <div class="project-gallery">
+            <figure class="gallery-item">
+              <img src="./images/project4-1.png" alt="Power BI dashboard" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project4-1.png')">
+              <figcaption>Power BI dashboard</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./images/project4-2.png" alt="model view" loading="lazy" onerror="this.classList.add('img-missing');this.closest('.gallery-item').classList.add('is-missing');this.closest('.gallery-item').setAttribute('data-filename','project4-2.png')">
+              <figcaption>Model View</figcaption>
+            </figure>
+          </div>
+          <a class="project-link" href="https://github.com/ALKAPODDAR/SuperMarket-Report/blob/main/README.md" target="_blank" rel="noopener">for details → view repository →</a>
+        </div>
+      </article>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">-- SELECT * FROM timeline ORDER BY date DESC;</p>
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-row">
+        <span class="timeline-date mono-tag"><b>Nov 2022 - Jun 2026</b></span>
+        <div class="timeline-content">
+         <h3><b>B.Tech, Computer Science &amp; Engineering (Blockchain)</b></h3>
+          <p>Samrat Ashok Technological Institute, Vidisha &middot; <b>CGPA 8.13</b></p> 
+        </div>
+      </div>
+      <div class="timeline-row">
+        <span class="timeline-date mono-tag">Jul 2021</span>
+        <div class="timeline-content">
+         <h3>Senior School Certificate Examination</h3>
+          <p>Shri Balaji Public High School &middot; 72%</p> 
+        </div>
+      </div>
+      <div class="timeline-row">
+        <span class="timeline-date mono-tag">May 2019</span>
+        <div class="timeline-content">
+         <h3>Secondary School Examination</h3>
+          <p>St. Joseph's Convent Girls Sr Sec School &middot; 86%</p> 
+        </div>
+      </div>
+    </div>
+    <div class="about-note cert-note">
+      <span class="about-note-label">-- certifications</span>
+      <ol class="about-timeline">
+        <li><span class="mono-tag">01</span> Quantium Virtual Internship — Retail Strategy and Analytics <em>(Forage)</em></li>
+        <li><span class="mono-tag">02</span> BCG X — Introduction to Data for Decision Makers <em>(Forage)</em></li>
+        <li><span class="mono-tag">03</span> SQL for Data Analysis — Maven Analytics</li>
+        <li><span class="mono-tag">04</span> Python Data Prep &amp; EDA — Maven Analytics</li>
+        <li><span class="mono-tag">05</span> Power BI Desktop for Business Intelligence — Udemy</li>
+        <li><span class="mono-tag">06</span> A/B Testing in Python — 365 Careers, Udemy</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">-- SELECT * FROM timeline ORDER BY date ASC;</p>
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-row">
+        <span class="timeline-date mono-tag">Jul 2023</span>
+        <div class="timeline-content">
+          <h3>In-house Internship — Programming Tactics</h3>
+          <p>Built and queried relational databases in MySQL — joins, subqueries, CTEs and window functions across 30+ problems.
+          Ran EDA on a baseball dataset to surface top talent-producing schools, high-spending franchises and player retention patterns.</p>
+        </div>
+      </div>
+      <div class="timeline-row">
+        <span class="timeline-date mono-tag">2023 – 2026</span>
+        <div class="timeline-content">
+          <h3>Lead Anchor &amp; Host — FIAT Speakers &amp; Skill Development Club</h3>
+          <p>Mentored 50+ club members on public speaking and stage presence to build hosting confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOMETHING WORTH SHARING ============ -->
+<div class="section-inner">
+  <div class="about-note cert-note">
+        <span class="about-note-label">-- SELECT * FROM principle WHERE follow = true;</span>
+          <span class="about-note-label"><strong>-- lead with the answer → support it with evidence → make the reasoning easy to follow :)</strong></span>
+        <p>Good analysis isn't enough if the insight gets lost in the explanation.<br>
+          One framework that has changed the way I communicate my work is the <strong>"Pyramid Principle"</strong> — starting with the answer, then organizing the reasoning and evidence underneath it.
+          As an engineer, I naturally tend to explain <strong>how</strong> I solved something. The Pyramid Principle has pushed me to think more about <strong>what matters first</strong>: What is the answer? Why does it matter? And what evidence supports it?
+          I'm still practicing it, but it has changed the way I approach dashboards, presentations, and even everyday communication.<br>
+          The goal isn't to make analysis more complicated, it's to <strong>make the thinking easier to follow</strong>.<br>
+          If this helps you, here’s the blog by Ameet Ranadive on Medium that helped me learn the Pyramid Principle.<br>
+          <a class="project-link" href="https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7" target="_blank" rel="noopener">My recommended read →</a>
+        </p>
+  </div>
+</div>
+<!-- ============ CONTACT ============ -->
+<footer id="contact" class="footer">
+  <div class="footer-inner">
+    <p class="section-eyebrow">-- SELECT * FROM contact;</p>
+    <h2 class="footer-title">Let's talk data.</h2>
+    <p class="footer-sub">Open to data analyst roles &amp; internships.</p>
+
+    <div class="contact-grid">
+      <a href="mailto:alkapoddar1218@gmail.com" class="contact-item">
+        <span class="mono-tag">email</span> alkapoddar1218@gmail.com
+      </a>
+      <a href="tel:+919131886902" class="contact-item">
+        <span class="mono-tag">phone</span> +91 91318 86902
+      </a>
+      <a href="https://www.linkedin.com/in/alka-poddar-82499224a/" target="_blank" rel="noopener" class="contact-item">
+        <span class="mono-tag">linkedin</span> /in/alka-poddar
+      </a>
+      <a href="https://github.com/ALKAPODDAR?tab=repositories" target="_blank" rel="noopener" class="contact-item">
+        <span class="mono-tag">github</span> /ALKAPODDAR
+      </a>
+    </div>
+
+    <p class="footer-copy">Designed &amp; built by Alka Poddar.</p>
+  </div>
+</footer>
+
+<!-- ============ IMAGE LIGHTBOX (enlarged project screenshots) ============ -->
+<div class="img-lightbox" id="imgLightbox" aria-hidden="true">
+  <div class="img-lightbox-frame">
+    <img class="img-lightbox-img" id="imgLightboxImg" src="" alt="">
+    <p class="img-lightbox-caption" id="imgLightboxCaption"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
